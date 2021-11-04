@@ -8,7 +8,5 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="thực hành" />
-    <orderEntry type="module" module-name="Biến, kiểu dữ liệu và toán tử" />
   </component>
 </module>

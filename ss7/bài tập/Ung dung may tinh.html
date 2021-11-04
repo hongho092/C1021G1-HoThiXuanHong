@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ud mt</title>
+</head>
+<body>
+<input id="fi" type="text" style="width: 175px">
+<input id="se" type="text" style="width: 175px"><br><br>
+<button onclick="add()">Addition(+)</button>
+<button onclick="sub()">Subtraction(-)</button>
+<button onclick="mul()">Multiplication(X)</button>
+<button onclick="div()">Division(/)</button>
+
+<script>
+function add() {
+    let a = parseInt(document.getElementById('fi').value);
+    let b = parseInt(document.getElementById('se').value);
+    let c = a + b
+    alert(c);
+}
+function sub() {
+    let a = parseInt(document.getElementById('fi').value);
+    let b = parseInt(document.getElementById('se').value);
+    let c = a - b
+    alert(c);
+}
+function mul() {
+    let a = parseInt(document.getElementById('fi').value);
+    let b = parseInt(document.getElementById('se').value);
+    let c = a * b
+    alert(c);
+}
+function div() {
+    let a = parseInt(document.getElementById('fi').value);
+    let b = parseInt(document.getElementById('se').value);
+    let c = a / b
+    alert(c);
+}
+</script>
+
+</body>
+</html>

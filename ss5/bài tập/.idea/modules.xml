@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/bài tập.iml" filepath="$PROJECT_DIR$/.idea/bài tập.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../ss7/bài tập/Biến, kiểu dữ liệu và toán tử/.idea/Biến, kiểu dữ liệu và toán tử.iml" filepath="$PROJECT_DIR$/../../ss7/bài tập/Biến, kiểu dữ liệu và toán tử/.idea/Biến, kiểu dữ liệu và toán tử.iml" />
+      <module fileurl="file://$APPLICATION_HOME_DIR$/.idea/WebStorm 2020.1.iml" filepath="$APPLICATION_HOME_DIR$/.idea/WebStorm 2020.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../ss7/bài tập/.idea/bài tập.iml" filepath="$PROJECT_DIR$/../../ss7/bài tập/.idea/bài tập.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../ss7/thực hành/.idea/thực hành.iml" filepath="$PROJECT_DIR$/../../ss7/thực hành/.idea/thực hành.iml" />
     </modules>
   </component>
 </project>
