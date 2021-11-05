@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>namnhuan</title>
+</head>
+<body>
+<script>
+    let year = parseInt(prompt('Hay nhap so nam ma ban muon:'));
+    if (year % 4 == 0) {
+        if (year % 100 !=0)
+            alert("Day la nam nhuan");
+    } else {
+        if (year % 100 == 0) {
+            if (year % 400 == 0) {
+                alert("Day la nam nhuan");
+            }
+        }else alert("Day khong phai la nam nhuan");
+    }
+</script>
+</body>
+</html>

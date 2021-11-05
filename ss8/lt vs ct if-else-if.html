@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>if-else-if</title>
+</head>
+<body>
+<script>
+    let name = prompt('Who are you', '');
+    let pw = prompt('Your password', '');
+    if (name == null || pw == null) {
+        alert('Canceled');
+    } else {
+        if (name == 'Admin' && pw == 'TheMaster') {
+            alert('Welcome');
+        } else {
+            alert('Canceled');
+        }
+    }
+</script>
+</body>
+</html>
