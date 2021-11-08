@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>b6</title>
+</head>
+<body>
+<script>
+    let dt = parseInt(prompt('Hay nhap doanh thu cua ban: '))
+
+    if (dt <= 1000000) {
+        thh = dt * 0.05
+        document.write('Hoa hong cua ban la: ', + thh)
+    } else if (dt > 1000000 && dt <= 10000000 ){
+        thh = dt * 0.1
+        document.write('Hoa hong cua ban la: ', + thh)
+    } else if (dt > 10000000 ){
+        thh = dt * 0.15
+        document.write('Hoa hong cua ban la: ', + thh)
+    }
+
+</script>
+</body>
+</html>

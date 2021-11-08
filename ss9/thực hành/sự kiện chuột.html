@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>skc</title>
+</head>
+<body>
+<form>
+<img id="img" src="depositphotos_11495188-stock-illustration-soccer-ball.jpg" style="width: 300px">
+<p>Click button below to move the image to right</p>
+<input type="button" value="Click me" onclick="moveRight()">
+
+</form>
+<script>
+
+    let ball = document.getElementById("img");
+    function init() {
+
+        ball.style.position = 'relative';
+        ball.style.left = '0px';
+    }
+
+    function moveRight() {
+        ball.style.left = parseInt(img.style.left) + 10 + "px";
+    }
+    window.onload = init;
+</script>
+</body>
+</html>

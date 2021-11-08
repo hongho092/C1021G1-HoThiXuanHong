@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>b5</title>
+</head>
+<body style="font-size: 45px">
+<script>
+    let dkt = parseInt(prompt('Hay nhap diem kiem tra cua ban: '))
+    let dgk = parseInt(prompt('Hay nhap diem giua ki cua ban: '))
+    let dck = parseInt(prompt('Hay nhap diem cuoi ki cua ban: '))
+
+    let dtb = (dkt+dgk*2+dck*3)/6
+
+    if (dtb > 10) {
+        alert('Ban da nhap sai')
+    } else {
+        if (dtb >= 8) {
+            document.write('hoc luc gioi')
+        } else if (dtb <8 && dtb >= 6.5 ) {
+            document.write('hoc luc kha')
+        } else if (dtb < 6.5 && dtb >=5) {
+            document.write('hoc lua trung binh')
+        } else document.write('hoc luc kem')
+    }
+</script>
+
+</body>
+</html>

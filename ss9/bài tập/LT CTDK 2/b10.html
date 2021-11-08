@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>b10</title>
+</head>
+<body>
+<script>
+    let csd = parseInt(prompt('Nhap chi so dien cua ban'))
+
+    if (csd > 0 && csd <= 50) {
+        document.write('Gia dien cua ban: ', + (csd*1.678))
+    } else if (csd <= 100) {
+        document.write('Gia dien cua ban: ', + (csd*1.734))
+    } else if (csd <= 200) {
+        document.write('Gia dien cua ban: ', + (csd*2.014))
+    } else if (csd <= 300) {
+        document.write('Gia dien cua ban: ', + (csd*2.536))
+    } else if (csd <= 400) {
+        document.write('Gia dien cua ban: ', + (csd*2.834))
+    } else
+        document.write('Gia dien cua ban: ', + (csd*2.927))
+</script>
+</body>
+</html>

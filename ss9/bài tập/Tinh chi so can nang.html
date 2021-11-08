@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tcscn</title>
+</head>
+<body>
+<script>
+    let weight = parseInt(prompt('Hay nhap can nang cua ban:'))
+    let height = parseInt(prompt('Hay nhap chieu cao cua ban:'))
+    BMI = weight / (height ^ 2)
+
+    if (BMI < 18)
+        alert("Underweight")
+    else if (BMI < 25.0)
+        alert("Normal")
+    else if (BMI < 30.0)
+        alert("Overweight")
+    else
+        alert("Obese")
+</script>
+</body>
+</html>

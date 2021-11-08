@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>b7</title>
+</head>
+<body>
+<script>
+/*
+doi voi cuoc goi tu 0 -> 50 thi cuoc la 50000
+tu phut 50 tro di thì cu 10 phut sẽ cong them 5000
+tu phut 100 tro di thi cu 10 phut se cong them 3000
+ */
+
+    var sp = parseInt(prompt('Hay nhap so phut cua ban: '))
+    var ccd = 50000
+        a = sp - 50
+        b = sp - 100
+
+    if (sp > 0 && sp <= 50) {
+        document.write('Tien cuoc cua ban la: ', + ccd, 'VND')
+    } else if (sp > 50 && sp <= 100) {
+        a = sp - 50
+        cdt = ((a - (a % 10))/10 ) * 5000 + ccd
+        document.write('Tien cuoc cua ban la: ', + cdt, 'VND')
+    } else if (sp > 100) {
+        cdt = (((a - (a % 10))/10 ) * 5000) + (((b - (b % 10))/10 ) * 3000 + ccd)
+        document.write('Tien cuoc cua ban la: ', + cdt, 'VND')
+    }
+
+
+</script>
+</body>
+</html>

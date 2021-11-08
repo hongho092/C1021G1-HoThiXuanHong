@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="text" id="thg" name="month" >
+    <input onclick="tinh()" type='button' value="Tinh so ngay" >
+    <p id="ht" > </p>
+
+</form>
+<script>
+    function tinh() {
+    let month = parseInt(document.getElementById("thg").value)
+    switch (month) {
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+            document.getElementById('ht').innerHTML = 'Thang ' + month + ' co 31 ngay'
+            break;
+        case 2:
+            document.getElementById('ht').innerHTML = 'Thang '+ month + ' co 28 hoac 29 ngay'
+            break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            document.getElementById('ht').innerHTML = 'Thang '+ month + ' co 30 ngay'
+            break;
+        default: alert('Thang nay khong co')
+        }
+    }
+</script>
+</body>
+</html>

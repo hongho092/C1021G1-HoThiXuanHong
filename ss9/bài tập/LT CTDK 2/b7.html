@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>b7</title>
+</head>
+<body>
+<script>
+    var a = parseInt(prompt('Hay nhap he so a cho ax2+bx+c=0:', 10))
+    var b = parseInt(prompt('Hay nhap he so b cho ax2+bx+c=0:', 10))
+    var c = parseInt(prompt('Hay nhap he so c cho ax2+bx+c=0:', 10))
+    var d = b*b - (4*a*c)
+    var    e = Math.sqrt(d)
+
+
+    if (d < 0){
+        document.write('Phuong trinh vo nghiem')
+    } else if (d == 0) {
+        let x = -b / 2*a
+        document.write('Phuong trinh co nghiem x = : ', x)
+    } else if (d > 0) {
+        let x1 = (-b + e) / 2*a
+        let x2 = (-b - e) / 2*a
+        document.write('Phuong trinh co nghiem x1 = ', x1)
+        document.write('<br>')
+        document.write('Phuong trinh co nghiem x2 = ', x2)
+    }
+
+</script>
+</body>
+</html>
