@@ -2,41 +2,114 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>mtdg</title>
+    <title>Máy Tính</title>
 </head>
+<style>
+    .maytinh {
+        border: 4px solid #000;
+        width: 270px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+        margin: auto;
+    }
+    #ketQua {
+        padding: 10px;
+    }
+    .tinh {
+        margin: 10px;
+        font-size: 25px;
+    }
+</style>
 <body>
-<br><br><br><br><br><br>
-<table border="1" style="text-align: center; color: blue">
-    <tr>
-        <td colspan="4" ><input type="text"></td>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td>+</td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>5</td>
-        <td>6</td>
-        <td>-</td>
-    </tr>
-    <tr>
-        <td>7</td>
-        <td>8</td>
-        <td>9</td>
-        <td>x</td>
-    </tr>
-    <tr>
-        <td>C</td>
-        <td>0</td>
-        <td>=</td>
-        <td>/</td>
-    </tr>
-</table>
+<div class="maytinh">
+    <input type="text" id="ketQua" style="width: 220px">
+    <div class="button">
+        <button class="tinh" id="one" value="1" style="width: 35px" onclick="clickOne()">1</button>
+        <button class="tinh" id="two" value="2" style="width: 35px" onclick="clickTwo()">2</button>
+        <button class="tinh" id="three" value="3" style="width: 35px" onclick="clickThree()">3</button>
+        <button class="tinh" id="cong" value="+" style="width: 35px" onclick="congcong()">+</button>
+        <br>
+        <button class="tinh" id="four" value="4" style="width: 35px" onclick="clickFour()">4</button>
+        <button class="tinh" id="five" value="5" style="width: 35px" onclick="clickFive()">5</button>
+        <button class="tinh" id="six" value="6" style="width: 35px" onclick="clickSix()">6</button>
+        <button class="tinh" id="tru" value="-" style="width: 35px" onclick="trutru()">-</button>
+        <br>
+        <button class="tinh" id="seven" value="7" style="width: 35px" onclick="clickSeven()">7</button>
+        <button class="tinh" id="eight" value="8" style="width: 35px" onclick="clickEight()">8</button>
+        <button class="tinh" id="nine" value="9" style="width: 35px" onclick="clickNine()">9</button>
+        <button class="tinh" id="nhan" value="*" style="width: 35px" onclick="nhanhan()">*</button>
+        <br>
+        <button class="tinh" id="reset" value="C" style="width: 35px" onclick="reset()">C</button>
+        <button class="tinh" id="zero" value="0" style="width: 35px" onclick="clickZero()">0</button>
+        <button class="tinh" id="bang" value="=" style="width: 35px" onclick="bangbang()">=</button>
+        <button class="tinh" id="chia" value="/" style="width: 35px" onclick="chiachia()">/</button>
+    </div>
+</div>
 <script>
-
+    function clickOne() {
+        let valueOne = document.getElementById("one").value;
+        document.getElementById("ketQua").value += valueOne;
+    }
+    function clickTwo() {
+        let valueTwo = parseInt(document.getElementById("two").value);
+        document.getElementById("ketQua").value += valueTwo;
+    }
+    function clickThree() {
+        let valuethree = parseInt(document.getElementById("three").value);
+        document.getElementById("ketQua").value += valuethree;
+    }
+    function clickFour() {
+        let valuefour = parseInt(document.getElementById("four").value);
+        document.getElementById("ketQua").value += valuefour;
+    }
+    function clickFive() {
+        let valuefive = parseInt(document.getElementById("five").value);
+        document.getElementById("ketQua").value += valuefive;
+    }
+    function clickSix() {
+        let valuesix = parseInt(document.getElementById("six").value);
+        document.getElementById("ketQua").value += valuesix;
+    }
+    function clickSeven() {
+        let valueseven = parseInt(document.getElementById("seven").value);
+        document.getElementById("ketQua").value += valueseven;
+    }
+    function clickEight() {
+        let valueeight = parseInt(document.getElementById("eight").value);
+        document.getElementById("ketQua").value += valueeight;
+    }
+    function clickNine() {
+        let valuenine = parseInt(document.getElementById("nine").value);
+        document.getElementById("ketQua").value += valuenine;
+    }
+    function clickZero() {
+        let valuezero = parseInt(document.getElementById("zero").value);
+        document.getElementById("ketQua").value += valuezero;
+    }
+    function congcong() {
+        let valuecong = document.getElementById("cong").value;
+        document.getElementById("ketQua").value += valuecong;
+    }
+    function trutru() {
+        let valuetru = document.getElementById("tru").value;
+        document.getElementById("ketQua").value += valuetru;
+    }
+    function nhanhan() {
+        let valuenhan = document.getElementById("nhan").value;
+        document.getElementById("ketQua").value += valuenhan;
+    }
+    function chiachia() {
+        let valuechia = document.getElementById("chia").value;
+        document.getElementById("ketQua").value += valuechia;
+    }
+    function bangbang() {
+        document.getElementById("ketQua").value = eval(document.getElementById("ketQua").value);
+    }
+    function reset() {
+        document.getElementById("ketQua").value = "";
+    }
 </script>
 </body>
 </html>
