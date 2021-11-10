@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>maytinhdongian</title>
+</head>
+<body>
+<h1> MU Vô địch</h1>
+<button id="no" onmouseover="clickNo()" style="position: relative">Yes</button>
+
+<button onclick="clickYes()">No</button>
+</body>
+<script>
+
+    function clickYes() {
+        alert("Đúng");
+    }
+
+
+
+    function clickNo() {
+        let x = window.innerWidth ;
+        let y = window.innerHeight ;
+
+        let item = document.getElementById("no");
+        item.style.left = Math.random() * x + 'px' ;
+        item.style.top = Math.random() * y + 'px' ;
+
+    }
+</script>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>maytinhdongian</title>
+</head>
+<body>
+<h1> MU Vô địch</h1>
+<button id="no" onmouseover="clickNo()" style="position: relative">Yes</button>
+
+<button onclick="clickYes()">No</button>
+</body>
+<script>
+
+    function clickYes() {
+        alert("Đúng");
+    }
+
+
+
+    function clickNo() {
+        let x = window.innerWidth ;
+        let y = window.innerHeight ;
+
+        let item = document.getElementById("no");
+        item.style.left = Math.random() * x + 'px' ;
+        item.style.top = Math.random() * y + 'px' ;
+
+    }
+</script>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>maytinhdongian</title>
+</head>
+<body>
+<h1> MU Vô địch</h1>
+<button id="no" onmouseover="clickNo()" style="position: relative">Yes</button>
+
+<button onclick="clickYes()">No</button>
+</body>
+<script>
+
+    function clickYes() {
+        alert("Đúng");
+    }
+
+
+
+    function clickNo() {
+        let x = window.innerWidth ;
+        let y = window.innerHeight ;
+
+        let item = document.getElementById("no");
+        item.style.left = Math.random() * x + 'px' ;
+        item.style.top = Math.random() * y + 'px' ;
+
+    }
+</script>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="Images/Hinh1a.png" onclick="changeImg1()" id="carA" width="250 px" height="600 px">
+<img src="Images/Hinh2b.png" onclick="changeImg2()" id="carB" width="250 px" height="600 px">
+<img src="Images/Hinh3c.png" onclick="changeImg3()" id="carC" width="250 px" height="600 px">
+<img src="Images/Hinh1d.png" onclick="changeImg4()" id="carD" width="250 px" height="600 px">
+<img src="Images/Hinh1e.png" onclick="changeImg5()" id="carE" width="250 px" height="600 px">
+<h2 id="result"></h2>
+<script>
+    function changeImg1() {
+        // Lấy thông tin của thẻ img mà mình click
+        let img1 = document.getElementById("carA");
+        // Xét Giá trị của thuộc tính src để đổi hình ảnh
+        if (img1.getAttribute("src") === "Images/Hinh1a.png") {
+            img1.src = "Images/Hinh2a.png";
+        } else if (img1.getAttribute("src") === "Images/Hinh2a.png") {
+            img1.src = "Images/Hinh3a.png";
+        } else {
+            img1.src = "Images/Hinh1a.png";
+        }
+        // Gọi phương thức check để kiểm tra hình ảnh đã đúng 1 bộ chưa.
+        check();
+    }
+
+    function changeImg2() {
+        let img1 = document.getElementById("carB");
+        if (img1.getAttribute("src") === "Images/Hinh1b.png") {
+            img1.src = "Images/Hinh2b.png";
+        } else if (img1.getAttribute("src") === "Images/Hinh2b.png") {
+            img1.src = "Images/Hinh3b.png";
+        } else {
+            img1.src = "Images/Hinh1b.png";
+        }
+        check();
+
+    }
+
+    function changeImg3() {
+        let img1 = document.getElementById("carC");
+        if (img1.getAttribute("src") === "Images/Hinh1c.png") {
+            img1.src = "Images/Hinh2c.png";
+        } else if (img1.getAttribute("src") === "Images/Hinh2c.png") {
+            img1.src = "Images/Hinh3c.png";
+        } else {
+            img1.src = "Images/Hinh1c.png";
+        }
+        check();
+
+    }
+
+    function changeImg4() {
+        let img1 = document.getElementById("carD");
+        if (img1.getAttribute("src") === "Images/Hinh1d.png") {
+            img1.src = "Images/Hinh2d.png";
+        } else if (img1.getAttribute("src") === "Images/Hinh2d.png") {
+            img1.src = "Images/Hinh3d.png";
+        } else {
+            img1.src = "Images/Hinh1d.png";
+        }
+
+        check();
+
+    }
+
+    function changeImg5() {
+        let img1 = document.getElementById("carE");
+        if (img1.getAttribute("src") === "Images/Hinh1e.png") {
+            img1.src = "Images/Hinh2e.png";
+        } else if (img1.getAttribute("src") === "Images/Hinh2e.png") {
+            img1.src = "Images/Hinh3e.png";
+        } else {
+            img1.src = "Images/Hinh1e.png";
+        }
+
+        check();
+
+    }
+
+    function check() {
+        // Lấy về giá trị src của 5 thẻ img
+        let img1 = document.getElementById("carA").getAttribute("src");
+        let img2 = document.getElementById("carB").getAttribute("src");
+        let img3 = document.getElementById("carC").getAttribute("src");
+        let img4 = document.getElementById("carD").getAttribute("src");
+        let img5 = document.getElementById("carE").getAttribute("src");
+
+        //Xét nếu giá trị src của 5 thẻ img có trùng 1 bộ không (Giá trị của mình tự xét)
+        if (   img1 === "Images/Hinh1a.png"
+            && img2 === "Images/Hinh1b.png"
+            && img3 === "Images/Hinh1c.png"
+            && img4 === "Images/Hinh1d.png"
+            && img5 === "Images/Hinh1e.png"
+        ) {
+            alert("Bạn đẫ săp xếp thành công hình 1!")
+        } else if (img1 === "Images/Hinh2a.png"
+            && img2 === "Images/Hinh2b.png"
+            && img3 === "Images/Hinh2c.png"
+            && img4 === "Images/Hinh2d.png"
+            && img5 === "Images/Hinh2e.png") {
+            alert("Bạn đẫ săp xếp thành công hình 2!")
+        }
+    }
+</script>
+</body>
+</html>
+
+</body>
+</html>

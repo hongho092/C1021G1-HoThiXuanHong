@@ -2,28 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3aa64735-13a6-43e1-9f8e-15e0e54e2a6f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../ss9/bài tập/LT CTDK 1/b1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ss9/bài tập/LT CTDK 1/b2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ss9/bài tập/LT CTDK 1/b3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ss9/bài tập/LT CTDK 1/b4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ss9/bài tập/LT CTDK 1/b5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ss9/bài tập/LT CTDK 1/b6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ss9/bài tập/LT CTDK 1/b7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ss9/bài tập/LT CTDK 2/b1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ss9/bài tập/LT CTDK 2/b10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ss9/bài tập/LT CTDK 2/b11.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ss9/bài tập/LT CTDK 2/b12.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ss9/bài tập/LT CTDK 2/b2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ss9/bài tập/LT CTDK 2/b3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ss9/bài tập/LT CTDK 2/b4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ss9/bài tập/LT CTDK 2/b5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ss9/bài tập/LT CTDK 2/b6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ss9/bài tập/LT CTDK 2/b7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ss9/bài tập/LT CTDK 2/b8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ss9/bài tập/LT CTDK 2/b9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ss9/bài tập/May tinh don gian.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ss9/bài tập/Tinh chi so can nang.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ss9/thực hành/sự kiện chuột.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss11/bài tập/Hien thi cac so nguyen to dau tien.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss11/bài tập/Ltvl1/avafb.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss11/bài tập/Ltvl1/b3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss11/bài tập/Ltvl1/b4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss11/bài tập/Ltvl1/sdhaefhz.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss11/bài tập/Ltvl1/ưgeh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11/bài tập/Sinh bang cuu chuong.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11/bài tập/Sinh bang cuu chuong.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ứng dụng chuyển đổi tiền tệ.html" beforeDir="false" afterPath="$PROJECT_DIR$/Ứng dụng chuyển đổi tiền tệ.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +41,7 @@
       <option name="presentableId" value="Default" />
       <updated>1636364216366</updated>
       <workItem from="1636364218558" duration="207000" />
+      <workItem from="1636531426854" duration="121000" />
     </task>
     <servers />
   </component>

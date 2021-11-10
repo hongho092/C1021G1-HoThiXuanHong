@@ -1,41 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
-    <title>Ud mt</title>
+    <title>Chuyển đổi tiền tệ</title>
 </head>
 <body>
-<input id="fi" type="text" style="width: 175px">
-<input id="se" type="text" style="width: 175px"><br><br>
-<button onclick="add()">Addition(+)</button>
-<button onclick="sub()">Subtraction(-)</button>
-<button onclick="mul()">Multiplication(X)</button>
-<button onclick="div()">Division(/)</button><br><br>
-<table><tr><td id="end"></td></tr></table>
+<table>
+    <tr >
+        <td width="250">Amount</td>
+        <td width="200">From Currency</td>
+        <td width="200">To Currency</td>
+        <td width="200"></td>
+    </tr>
+    <tr>
+        <td><input type="text" id="nhap"></td>
+        <td>
+            <select name="doitien" id="tiente1" >
+                <option value="vn">  VND   </option>
+                <option value="dola">USD</option>
+            </select>
+        </td>
+        <td>
+            <select name="doitien" id="tiente2">
+                <option value="dola" >USD</option>
+                <option value="vn">VND</option>
+            </select>
+        </td>
+        <td><button type="button" id="doi" onclick="chuyendoitiente()">Chuyển đổi</button></td>
+    </tr>
+    <tr>
+        <td colspan="4" align="center" ><p id="ketqua">Kết quả chuyển đổi </p></td>
+    </tr>
+</table>
+
+<!--Script-->
 <script>
-    function add() {
-        let a = parseInt(document.getElementById('fi').value);
-        let b = parseInt(document.getElementById('se').value);
-        let c = a + b
-        document.getElementById('end').innerHTML = 'Result Addition = ' + c
-    }
-    function sub() {
-        let a = parseInt(document.getElementById('fi').value);
-        let b = parseInt(document.getElementById('se').value);
-        let c = a - b
-        document.getElementById('end').innerHTML = 'Result Subtraction = ' + c
-    }
-    function mul() {
-        let a = parseInt(document.getElementById('fi').value);
-        let b = parseInt(document.getElementById('se').value);
-        let c = a * b
-        document.getElementById('end').innerHTML = 'Result Multiplication = ' + c
-    }
-    function div() {
-        let a = parseInt(document.getElementById('fi').value);
-        let b = parseInt(document.getElementById('se').value);
-        let c = a / b
-        document.getElementById('end').innerHTML = 'Result Division = ' + c
+    function chuyendoitiente() {
+        let tiente2, tiente1, giatri,ketqua;
+        tiente1 = document.getElementById("tiente1").value;
+        tiente2 = document.getElementById("tiente2").value;
+        giatri = document.getElementById("nhap").value;
+        if(tiente1 == "dola" && tiente2 == "vn"){
+            ketqua = giatri*23000
+            document.getElementById("ketqua").innerHTML = "Số tiền = "+ketqua + " VND"
+        }else if(tiente1 == "vn" && tiente2 == "dola"){
+            ketqua = giatri/23000
+            document.getElementById("ketqua").innerHTML = "Số tiền = "+ketqua.toFixed(2) + " USD"
+        }else if(tiente1 == "vn" && tiente1 == "vn"){
+            document.getElementById("ketqua").innerHTML = "Số tiền = "+giatri + " VND"
+        }else{
+            document.getElementById("ketqua").innerHTML = "Số tiền = "+giatri + " USD"
+        }
     }
 </script>
 
