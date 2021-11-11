@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tvttvm</title>
+</head>
+<body>
+<h2>Sample Screen:</h2>
+<input type="text" id="nhap">
+<input type="button" id="add" value="Add" onclick="them()">
+<input type="button" id="dis" value="Display" onclick="hienthi()">
+<p id="place"> </p><br>
+<script>
+    let x = 0
+    let tudo = Array()
+    function them() {
+        tudo[x] = document.getElementById('nhap').value
+        alert('Nhan ' + tudo[x] + ' lam gia tri trong ham tudo ' + x)
+        x += 1
+        document.getElementById('nhap').value = ' '
+    }
+    function hienthi() {
+        let e = "<hr/>"
+        for (let i = 0; i < tudo.length; i++) {
+            e += "phan tu " + i + " = " + tudo[i] + "<br/>";
+        }
+        document.getElementById("place").innerHTML = e
+    }
+
+
+</script>
+</body>
+</html>

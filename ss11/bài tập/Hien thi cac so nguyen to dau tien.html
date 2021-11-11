@@ -2,18 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>htcsntdt</title>
+    <title>Title</title>
 </head>
 <body>
 <script>
-    let number = parseInt(prompt('Hay nhap so luong so nguyen to can tim: '))
-    let count = 0
-    for (let N = 2; count <= number; N++ ) {
-
-        console.log(N)
-
+    let dem = 0 ;
+    let n = 2;
+    let flag;
+    while (dem <= 20){
+        flag = true;
+        for (let i = 2 ; i <= Math.sqrt(n) ; i++){
+            if (n % i === 0){
+                flag = false
+                break;
+            }
+        } if (flag){
+            document.write(n + "<br>")
+            dem++;
+        }
+        n++
     }
-
 </script>
 </body>
 </html>

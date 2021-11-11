@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dncpttm</title>
+</head>
+<body>
+<script>
+    let arr = [-3,5,1,3,2,10]
+    let fir = 0
+    let las = arr.length - 1
+    while (fir < las ) {
+        let a = arr[fir];
+        arr[fir] = arr[las];
+        arr[las] = a;
+        fir++;
+        las--;
+    }
+    document.write(arr)
+</script>
+</body>
+</html>

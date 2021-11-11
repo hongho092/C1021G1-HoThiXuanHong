@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3aa64735-13a6-43e1-9f8e-15e0e54e2a6f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../ss11/bài tập/Hien thi cac so nguyen to dau tien.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ss11/bài tập/Ltvl1/avafb.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ss11/bài tập/Ltvl1/b3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ss11/bài tập/Ltvl1/b4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ss11/bài tập/Ltvl1/sdhaefhz.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ss11/bài tập/Ltvl1/ưgeh.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss11/bài tập/Sinh bang cuu chuong.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11/bài tập/Sinh bang cuu chuong.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ứng dụng chuyển đổi tiền tệ.html" beforeDir="false" afterPath="$PROJECT_DIR$/Ứng dụng chuyển đổi tiền tệ.html" afterDir="false" />
-    </list>
+    <list default="true" id="3aa64735-13a6-43e1-9f8e-15e0e54e2a6f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,6 +33,7 @@
       <updated>1636364216366</updated>
       <workItem from="1636364218558" duration="207000" />
       <workItem from="1636531426854" duration="121000" />
+      <workItem from="1636551108959" duration="40000" />
     </task>
     <servers />
   </component>
@@ -49,9 +41,9 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="548" y="158" key="FileChooserDialogImpl" timestamp="1636364424673">
+    <state x="548" y="158" key="FileChooserDialogImpl" timestamp="1636551143708">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="548" y="158" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1636364424673" />
+    <state x="548" y="158" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1636551143708" />
   </component>
 </project>

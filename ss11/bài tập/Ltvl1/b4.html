@@ -2,30 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>b4</title>
+    <title>b3</title>
 </head>
 <body style="font-size: 30px">
 <script>
-    let n1 = 0, n2 = 1, sum;
-
-    sum = n1 + n2;
-
-    do {
-        console(sum)
-        n1 = n2;
-        n2 = sum;
-        sum = n1 + n2;
-    } while (sum % 5 === 0)
-
-  //  while (sum % 5 === 0) {
-
-  //      console(sum)
-
-   //     n1 = n2;
-   //     n2 = sum;
-   //     sum = n1 + n2;
-
-  //  }
+    let dem = 20;
+    let a = 1, b = 1;
+    let chiaHetCho5 = "";
+    for (let i = 1; i <= dem; i++){
+        if (a % 5 === 0){
+            document.write(chiaHetCho5 + a + " ");
+            break;
+        }
+        let c = a + b;
+        a = b;
+        b = c;
+    }
 </script>
 </body>
 </html>
