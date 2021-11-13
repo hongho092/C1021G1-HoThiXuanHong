@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>辞書</title>
+</head>
+<body style="font-size: 30px">
+<input type="text" id="nhap"><br>
+<input type="button" value="search" id="tk" onclick="sea()">
+<p id="ht"></p>
+
+<script>
+    let eng = ['dog','cat','cow','buffalo', 'fish']
+    let vie = ['con cho','con meo','con bo','con trau','con ca']
+
+    function sea() {
+        nword = document.getElementById('nhap').value
+
+        for (i=0;i<=eng.length;i++){
+            if (nword === eng[i]) {
+                document.getElementById('ht').innerHTML = vie[i];break;
+            } else {
+                document.getElementById('ht').innerHTML = ' khong co thong tin tim kiem'
+            }
+        }
+    }
+   // nword = document.getElementById('nhap').value
+   // document.write(nword)
+</script>
+</body>
+</html>

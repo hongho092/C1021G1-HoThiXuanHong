@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>b3</title>
+</head>
+<body style="font-size: 50px">
+<script>
+    let arr = [],
+        dem = 0,
+        i = 0
+
+    let num = parseInt(prompt('Nhap sl pt:'))
+    for (i=0; i<num; i++) {
+        arr[i] = prompt('Pt '+ i)
+    }
+    document.write(arr + '<br>')
+
+    for (i=0; i<num; i++) {
+        if (arr[i]%2===0 || arr[i]%2===1) {
+            dem +=1
+        }
+    }
+    document.write('Ki tu so la: ' +dem)
+
+
+</script>
+</body>
+</html>

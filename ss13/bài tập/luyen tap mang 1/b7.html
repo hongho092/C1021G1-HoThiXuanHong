@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>b7</title>
+</head>
+<body>
+<script>
+    let i = 0
+    let arr = [ ]
+    let arr1 = [ ]
+    for (i=0; i<10; i++) {
+        arr[i] = parseInt(prompt('Hay nhap pt thu '+i+' :'))
+    }
+    //document.write('mang arr: '+arr)
+    let num = parseInt(prompt('Hay nhap so ban muon check: '))
+    for (i=0; i<10; i++) {
+        if (arr[i] === num) {
+            arr.splice(i,1);
+            document.write(arr)
+            break;
+        }
+    }
+
+</script>
+</body>
+</html>

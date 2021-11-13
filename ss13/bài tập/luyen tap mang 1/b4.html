@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>b4</title>
+</head>
+<body style="font-size: 30px">
+<script>
+    let num = parseInt(prompt('Hay nhap so pt ban muon: '))
+    let arr = [ ]
+    let i = 0
+    for (i=0; i<num; i++) {
+        arr[i] = parseInt(prompt('Hay nhap pt ' +i))
+    }
+    let fir = 0
+    let las = arr.length - 1
+    while (fir < las ) {
+        let a = arr[fir];
+        arr[fir] = arr[las];
+        arr[las] = a;
+        fir++;
+        las--;
+    }
+    document.write(arr)
+
+    //while ()
+   // console.log(arr)
+
+</script>
+</body>
+</html>

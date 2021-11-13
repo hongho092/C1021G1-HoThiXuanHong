@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>b8</title>
+</head>
+<body style="font-size: 50px">
+<script>
+    let arr = [], min = 0
+
+    for ( let i=0; i<10; i++) {
+        arr[i] = Number(prompt('Hay nhap pt '+i+' bat ky'))
+    }
+    document.write('mang cu: ' + arr +'<br>')
+
+    for ( let i=0; i<arr.length-1; i++) {
+        for (let j=i+1; j<arr.length; j++) {
+            if (arr[i] < arr[j]) {
+                min = arr[i]
+                arr[i] = arr[j]
+                arr[j] = min
+            }
+        }
+    }
+    document.write('mang moi: ' + arr)
+</script>
+</body>
+</html>

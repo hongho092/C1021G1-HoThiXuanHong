@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>b6</title>
+</head>
+<body style="font-size: 40px">
+<script>
+//Viết chương trình nhập vào một mảng ký tự, tìm
+// tất cả các ký tự trong mảng là (-) và thay thế
+// các ký tự này bởi ký tự ( _ )
+let arr = new Array(prompt("Nhập vào một chuỗi"))
+let arrNew = []
+
+document.write('arr: '+arr+'<br>')
+for (let i=0; i<arr.length ; i++){
+    for (let j=0; j<arr[i].length; j++){
+        if(arr[i][j] == "-"){
+            arr[i][j] = "_"
+            arrNew.push("_")
+        }else{
+            arrNew.push(arr[i][j])
+        }
+
+    }
+}
+document.write("arrNew: "+arrNew.join("")+"<br>")
+
+</script>
+</body>
+</html>

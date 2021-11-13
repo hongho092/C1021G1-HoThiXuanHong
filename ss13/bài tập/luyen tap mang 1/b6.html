@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>b6</title>
+</head>
+<body>
+<script>
+
+    let i = 0
+    let arr = [ ]
+    for (i=0; i<10; i++) {
+        arr[i] = parseInt(prompt('Hay nhap pt thu '+i+' :'))
+    }
+    document.write('mang arr: '+arr)
+    let num = parseInt(prompt('Hay nhap so ban muon check: '))
+    for (i=0; i<10; i++) {
+        if (arr[i] === num) {
+            alert(num +' is in the array')
+        }else {
+            alert(num + ' is not in the array')}
+         break;
+    }
+</script>
+</body>
+</html>

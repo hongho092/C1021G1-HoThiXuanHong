@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>b2</title>
+</head>
+<body style="font-size: 50px">
+<script>
+    let arr = [ 'c', 's', 'c', '2', '6', '1' ],
+        fir = 0,
+        las = arr.length-1
+
+
+
+    while (fir < las ) {
+        let change = arr[fir]
+        arr[fir] = arr[las]
+        arr[las] = change
+        fir++
+        las--
+    }
+
+    document.write(arr.join(''))
+
+</script>
+</body>
+</html>

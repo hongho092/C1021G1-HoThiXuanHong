@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>b5</title>
+</head>
+<body style="font-size: 40px">
+<script>
+    //Viết một chương trình nhập vào 2 chuỗi,
+    // sau đó kiểm tra xem hai chuỗi có giống nhau hay không.
+
+    let chuoi1 = prompt('Hay nhap chuoi 1')
+    let chuoi2 = prompt('Hay nhap chuoi 2')
+    let ans = true
+
+    document.write('Chuoi 1: '+chuoi1+'<br>'+' Chuoi 2: '+chuoi2+'<br>')
+
+    if (chuoi1.length != chuoi2.length) {
+        document.write('2 chuoi khong giong nhau')
+    } else {
+        for(let i=0; i<chuoi1.length; i++) {
+           if (chuoi1[i] == chuoi2[i]) {
+               document.write('Giong nhau');
+           }else document.write('Khong giong nhau');
+        }
+    }
+
+
+</script>
+</body>
+</html>
