@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>b3</title>
+</head>
+<body>
+<input type="button" value="hinh 1" onclick="hinh1()">
+<input type="button" value="hinh 2" onclick="hinh2()">
+<input type="button" value="hinh 3" onclick="hinh3()">
+<input type="button" value="hinh 4" onclick="hinh4()">
+<p id="ht"> </p>
+<script>
+
+    function hinh1() {
+        for (let i=0; i<5; i++){
+            for (let j=0;j<=i;j++){
+                let sao = "*"
+                document.getElementById('ht').innerHTML = sao
+            }
+            document.write("<br>")
+        }
+    }
+
+
+    function hinh2() {
+        for (let i=5; i>0; i--) {
+            for (let j=0; j<i; j++) {
+                let sao = "*"
+                document.write(sao)
+            }
+            document.write("<br>")
+        }
+    }
+
+
+    function hinh3() {
+        document.write("<div style='width: 40px' align='right'>")
+        for (let i = 0; i<5; i++){
+            for (let j=0;j<=i;j++){
+                let sao = "*"
+
+                document.write(sao)
+                //
+            }
+            document.write("<br>")
+        }
+        document.write("</div><br><br>")
+    }
+
+
+    function hinh4() {
+        document.write("<div style='width: 40px' align='right'>")
+        for (let i = 5; i>0; i--){
+            for (let j=0;j<i;j++){
+                let sao = "*"
+                document.write(sao)
+            }
+            document.write("<br>")
+        }
+        document.write("</div>")
+    }
+
+</script>
+</body>
+</html>
