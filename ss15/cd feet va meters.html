@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cdgfvm</title>
+</head>
+<body>
+
+<input type="text" id="tF" oninput="footToMeter()"> F = <p id="Cc"> C </p>
+<input type="text" id="tC" oninput="meterToFoot()"> C = <p id="Fc"> F </p>
+<script>
+     function footToMeter( ) {
+         foot = document.getElementById('tF').value
+         document.getElementById('Cc').innerHTML = 0.305 * foot
+     }
+
+    function meterToFoot( ) {
+        meter = document.getElementById('tC').value
+        document.getElementById('Fc').innerHTML = 3.279 * meter
+    }
+    // meter = 0.305 * foot
+    // foot = 3.279 * meter
+
+
+
+
+
+
+</script>
+</body>
+</html>

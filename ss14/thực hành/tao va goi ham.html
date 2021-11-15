@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tvgh</title>
+</head>
+<body>
+<script>
+
+    function reply(answer) {
+        let kq = ' '
+        if (answer) {
+            kq = 'OK, WE WILL PLAY TOGETHER'
+        } else
+            kq = 'OK, LATER'
+        return kq
+    }
+
+    let cfkq = confirm('DO YOU WANT PLAY WITH ME?')
+    let theanswer = reply(cfkq)
+    alert(theanswer)
+
+</script>
+</body>
+</html>
