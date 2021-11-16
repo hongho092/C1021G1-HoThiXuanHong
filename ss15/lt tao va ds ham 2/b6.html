@@ -5,6 +5,31 @@
     <title>b6</title>
 </head>
 <body>
+<script>
+    //Bài 6: Viết hàm nhận vào một số, kiểm tra xem nếu
+    // số đưa vào có phải là nguyên dương không. Nếu là
+    // nguyên dương trả về true, ngược lại trả về false.
 
+
+        let kytu = prompt("Nhập vào ký tự kiểm tra")
+        let check = kiemtraKyTuNguyenAm(kytu)
+        if(check == true){
+            alert(kytu+ " Day la ky tu nguyen am")
+        }else{
+            alert(kytu+ " Day la ky tu nguyen duong")
+        }
+
+
+    function kiemtraKyTuNguyenAm(kytu) {
+        if(/[a-zA-Z]/.test(kytu) ){
+            return true
+        }
+        return false
+    }
+
+   // checkNumber()
+
+
+</script>
 </body>
 </html>

@@ -5,6 +5,26 @@
     <title>b3</title>
 </head>
 <body>
+<script>
+    //Bài 3: Viết hàm tính giai thừa của
+    // một số nguyên bất kỳ được đưa vào.
+    // Gọi hàm vừa xây dựng được.
 
+    let n = Number(prompt('input_any number: ')),
+        T = 1
+
+    githua(n)
+
+
+    function githua() {
+
+        for (let i=1; i<=n; i++) {
+            T = T * i
+        }
+        alert(T)
+
+    }
+
+</script>
 </body>
 </html>

@@ -10,18 +10,25 @@
     let chstarName = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']
 
     function search(starName) {
+        let result = ' '
         let inf = String(prompt('input name star: '))
         for (let i=0; i<starName.length; i++) {
             if (starName[i] === inf) {
-                alert('constellationName: ' + chstarName[i])
-                break;
-            } else alert("don't have this name !!!")
+                result = 'constellationName: ' + chstarName[i]
+                //alert('constellationName: ' + chstarName[i])
+                //break;
+            } else {
+                result = "don't have this name !!!"
+                //alert("don't have this name !!!")
+            }
+            return result
 
         }
 
     }
 
-      search(starName)
+    // let inf = String(prompt('input name star: '))
+    sea = search(starName)
 
 
 </script>

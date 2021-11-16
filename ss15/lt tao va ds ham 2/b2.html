@@ -5,6 +5,25 @@
     <title>b2</title>
 </head>
 <body>
+<script>
+    //Bài 2: Viết hàm tính diện tích,
+    // hàm tính chu vi hình tròn.
+    // Gọi hàm vừa xây dựng được
 
+    function ditich(a) {
+        S = Math.pow(a,2) * Math.PI
+        alert('Dien tich hinh tron: ' + S)
+    }
+
+    function chvi(a) {
+        C = 2 * a * Math.PI
+        alert('Chu vi hinh tron: ' + C)
+    }
+
+    let r = Number(prompt('Hay nhap ban kinh: '))
+    ditich(r)
+    chvi(r)
+
+</script>
 </body>
 </html>

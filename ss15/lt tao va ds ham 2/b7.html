@@ -5,6 +5,19 @@
     <title>b7</title>
 </head>
 <body>
+<script>
+    //Bài 7: Viết hàm truyền vào 2 số nguyên bất kì,
+    // thực hiện đổi chỗ hai số nguyên đó.
 
+    let a = prompt("Nhập số thứ nhất")
+    let b = prompt("Nhập số thứ hai")
+    let ketqua = doiCho2So(a,b)
+    document.write("Đổi chỗ 2 số: "+ketqua[0] +" , "+ketqua[1])
+
+    function doiCho2So(so_a, so_b) {
+        let c = [so_b,so_a]
+        return c
+    }
+</script>
 </body>
 </html>

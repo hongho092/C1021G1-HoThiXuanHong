@@ -5,6 +5,35 @@
     <title>b9</title>
 </head>
 <body>
+<script>
+    //Bài 9: Viết hàm truyền vào một mảng ký tự,
+    // và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ
+    // đó có nằm trong mảng không. Nếu có trả về số
+    // lần xuất hiện của ký tự đó, nếu không trả về -1.
 
+    let mang = ['a','b','c','c','d','d','d','e','d','f']
+    let kytu = prompt("nhap 1 ki tu bat ky")
+    document.write("mang gom: "+mang+"<br>")
+    let kiemtra = kiemTraTrongMang(kytu, mang)
+    if (kiemtra >0) {
+        document.write("co "+kiemtra+" ky tu "+kytu+" trong mang")
+    }else{
+        document.write("khong co du lieu trong mang: " +kiemtra)
+    }
+
+    function kiemTraTrongMang(kytu, mang) {
+        let dem=0
+        for (let i=0; i<mang.length; i++){
+            if (kytu == mang[i]) {
+                dem++
+            }
+        }
+        if(dem> 0){
+            return dem
+        }
+        return -1
+    }
+
+</script>
 </body>
 </html>

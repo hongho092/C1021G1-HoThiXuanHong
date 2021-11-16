@@ -5,6 +5,27 @@
     <title>b4</title>
 </head>
 <body>
+<script>
+    //Bài 4: Viết hàm kiểm tra xem ký tự nhập
+    // vào có phải là ký tự số không. Nếu là
+    // ký tự số hàm trả về true, ngược lại trả về false.
 
+    function kiemTraSoHayChuoi(i) {
+        if(i%2 ==0 || i%2 == 1){
+            return true
+        }
+        return false
+    }
+    function checkNumber() {
+        let i = prompt("Nhập vào ")
+        let check = kiemTraSoHayChuoi(i)
+        if(check){
+            alert("Đây là số")
+        }else{
+            alert("Đây là chuỗi")
+        }
+    }
+    checkNumber()
+</script>
 </body>
 </html>
