@@ -5,6 +5,24 @@
     <title>kttdx</title>
 </head>
 <body>
+<script>
+    function checkPalindrome(chuoi) {
+        let dai = chuoi.length -1
+        for (let i=0;i<chuoi.length;i++){
+            if (chuoi[i] === chuoi[dai]) {
+                dai--
+                 console.log('doi xung')
+            }else{
+                 console.log('khong doi xung')
+                break;
+            }
+        }
+    }
+    let arr = prompt("Nhập chuỗi")
+    checkPalindrome(arr)
 
+</script>
 </body>
 </html>
+
+abchghjcba
