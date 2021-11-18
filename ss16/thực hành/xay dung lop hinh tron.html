@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xdlHT</title>
+</head>
+<body>
+<script>
+
+    class Circle {
+        constructor(radius, color) {
+            this.radius = radius
+            this.color = color
+        }
+
+        getRadius () {
+            console.log(this.radius)
+        }
+
+        getArea (radius) {
+            console.log(Math.PI * this.radius * this.radius)
+        }
+
+    }
+
+    let circle1 = new Circle(2, 'red')
+    let circle2 = new Circle(4, 'yellow')
+    console.log(circle1)
+    console.log(circle2)
+    circle2.getArea()
+    circle1.getRadius()
+
+</script>
+</body>
+</html>

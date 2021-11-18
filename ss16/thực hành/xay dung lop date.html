@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vdlD</title>
+</head>
+<body>
+<script>
+
+    class MyDate {
+        constructor(day, month, year) {
+            this.day = day
+            this.month = month
+            this.year = year
+        }
+
+        getMyDate () {
+            return this.day,
+                this.month,
+                this.year
+        }
+
+        setMyDate (day, month, year) {
+            this.day = day
+            this.month = month
+            this.year = year
+        }
+    }
+
+    let date1 = new MyDate(4, 2, 2007)
+    let date2 = new MyDate(3, 3, 2008)
+    let date3 = new MyDate(2, 4, 2009)
+    // console.log(date1)
+    // console.log(date2)
+    // console.log(date3)
+    date1.setMyDate(5,1,2006)
+    console.log(date1)
+
+</script>
+</body>
+</html>
