@@ -5,6 +5,47 @@
     <title>qlsp</title>
 </head>
 <body>
+<h2>Add New Product</h2>
+<input type="text" id="namePro">
+<button onclick="addPro()">Add</button>
+<h2>Display All Product</h2>
+<table border="1" id="showPro" >
+
+</table>
+
+<script>
+    let product = ['nokia', 'samsung', 'lenovo']
+
+    function showPro() {
+        let tableHTML = `
+        <tr>
+            <th style="width: 150px">Product Name</th>
+            <th>Action</th>
+        </tr>`
+
+        for (let i=0; i<product.length; i++) {
+            tableHTML += `
+            <tr>
+                <td style="align-content: center">${product[i]}</td>
+                <td>
+                    <button onclick="editPro()">Edit</button>
+                    <button onclick="deletePro()">Delete</button>
+                </td>
+            </tr>`;
+        }
+        document.getElementById('showPro').innerHTML = tableHTML
+    }
+    showPro()
+    
+    function addPro() {
+        let namePro = document.getElementById('namePro').value
+        product.push(namePro)
+        // console.log(product)
+        showPro()
+    }
+
+
+</script>
 
 </body>
 </html>
