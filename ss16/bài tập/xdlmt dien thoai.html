@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xdlmtdt</title>
+</head>
+<body>
+<script>
+    class Mobile {
+        constructor(name, status, capacity) {
+            this.name = name
+            this.status = status
+            this.capacity = capacity
+            this.doMessage = ""
+            this.saveMessage = ""
+            this.getMessage = ""
+        }
+
+        checkStatus () {
+            console.log(this.name+' is '+ this.status)
+        }
+
+        getStatus (status) {
+            this.status = status
+        }
+
+        getCharge () {
+            this.capacity += 10
+            console.log(this.capacity)
+        }
+
+        createMess (message) {
+            message = prompt('input the message:')
+            this.doMessage += message + '\r\n'
+        }
+
+        getMess (message) {
+           // this.getMessage = this.doMessage
+            console.log(this.name+' have the message: '+this.getMessage)
+        }
+
+        sendMess (mobile) {
+            if (this.status == 'off') {
+                console.log('the phone is off')
+            } else {
+                this.createMess()
+                this.saveMessage = this.doMessage
+                mobile.getMessage = this.doMessage
+                mobile.getMess()
+                this.capacity -= 1
+                console.log(this.name+' after used: '+this.capacity)
+            }
+        }
+
+
+    }
+
+    let iphone = new Mobile('Iphone', 'on', 50)
+    let samsung = new Mobile('Samsung', 'on', 70)
+
+    //iphone.sendMess(samsung)
+    // console.log(iphone.doMessage)
+    // console.log(iphone.saveMessage)
+   // console.log(samsung.getMessage)
+    //iphone.getCharge()
+    //iphone.getStatus('off')
+    iphone.sendMess(samsung)
+   // iphone.createMess('do you love me?')
+    //console.log(iphone.doMessage)
+    //iphone.checkStatus()
+   // console.log(iphone)
+</script>
+</body>
+</html>

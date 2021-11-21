@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>疲れ５</title>
+</head>
+<body>
+<script>
+    class Rat {
+        constructor(name, m, speed, status) {
+            this.name = name
+            this.m = m
+            this.speed = speed
+            this.status = status
+        }
+        say () {
+            console.log(this.name+' chít, chít')
+        }
+    }
+
+    class Cat {
+        constructor(name, m, speed) {
+            this.name = name
+            this.m = m
+            this.speed = speed
+        }
+        say () {
+            console.log(this.name+' meo, meo')
+        }
+        catchRat (rat) {
+            if (this.speed > rat.speed) {
+                console.log('Da bat duoc chuot')
+                cat1.eatRat (rat)
+            } else {
+                console.log('Khong the bat duoc '+rat.name+', chay qua nhanh')
+            }
+        }
+        eatRat (rat) {
+            if (rat.status == 'alive') {
+                this.m += rat.m
+                console.log(this.name+' da an '+rat.name +'\r\n\r\n'+'khoi luong cua '+this.name+': '+this.m)
+            } else console.log(rat.name+' da chet, khong muon an')
+        }
+    }
+
+
+
+    let rat1 = new Rat('Jerry', 1, 50, 'alive')
+    let cat1 = new Cat('Tom', 10, 80)
+    console.log(rat1)
+    console.log(cat1)
+    rat1.say()
+    cat1.say()
+    cat1.catchRat(rat1)
+</script>
+</body>
+</html>

@@ -5,6 +5,31 @@
     <title>Fc</title>
 </head>
 <body>
+<canvas id="myCanvas" width="500px" height="500px" style="border:1px solid #d3d3d3;"></canvas>
+<script>
+    // function Circle(x, y, radius){
+    //     this.x = x;
+    //     this.y = y;
+    //     this.radius = radius;
+    // }
+    // function createCircle(){
+    //     var ctx = document.getElementById("myCanvas").getContext("2d");
+    //     var circle= new Circle(100, 100, 80);
+    //     //ctx.beginPath();
+    //     ctx.arc(circle.x, circle.y, circle.radius, 0, 2 * Math.PI);
+    //     ctx.fill();
+    // }
+    //
+    // createCircle()
 
+    let canvasObj = document.getElementById('myCanvas').getContext("2d")
+    //let canvasObj = canvasHTML.getContext("2d")
+
+    canvasObj.arc(200, 200, Number(prompt('input radius: ')), 0, 2*Math.PI)
+    canvasObj.stroke()
+    canvasObj.fillStyle = "yellow"
+    canvasObj.fill()
+
+</script>
 </body>
 </html>

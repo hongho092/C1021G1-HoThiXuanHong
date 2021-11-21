@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mohdcdp</title>
+</head>
+<body>
+<script>
+    class FlashLamp {
+        constructor (status, battery) {
+            this.status = status
+            this.battery = battery
+        }
+        changeBattery (battery) {
+            this.battery = battery
+        }
+        getBattery () {
+            return this.battery
+        }
+        light() {
+            if (this.status === 'on') {
+               alert('Flash Lamp is turning on')
+            }else alert('Flash Lamp is turning off')
+        }
+        turnOn () {
+            if (this.battery.getBat() > 0) {
+                this.status = 'on'
+                this.battery.decreaseEnergy()
+                alert('Flash Lamp turned on')
+            }else alert('out of energy')
+        }
+        turnOff () {
+            this.status = 'off'
+            alert('Flash Lamp turned off')
+        }
+    }
+
+    class Battery {
+        constructor(energy) {
+            this.energy = energy;
+        }
+        changeBat (energy) {
+            this.energy = energy
+        }
+        getBat () {
+            return this.energy
+        }
+        decreaseEnergy () {
+            if (this.energy > 0) {
+                this.energy --
+            }
+        }
+    }
+
+    let bat1 = new Battery(50)
+    let bat2 = new Battery(1)
+    let flaLam1 = new FlashLamp('off', bat1)
+    let flaLam2 = new FlashLamp('on', bat2)
+    //console.log(flaLam1)
+    // console.log(flaLam2)
+    // flaLam2.turnOn()
+    // console.log(flaLam2.getBattery())
+    flaLam1.turnOn()
+    console.log(flaLam1.battery)
+
+    // flaLam1.changeBattery(bat2)
+    // console.log(flaLam1)
+
+
+
+
+
+
+
+    // //console.log(a1)
+    // a1.setenergy(60)
+    // // console.log(a1)
+    // console.log(a1.getenergy())
+</script>
+</body>
+</html>

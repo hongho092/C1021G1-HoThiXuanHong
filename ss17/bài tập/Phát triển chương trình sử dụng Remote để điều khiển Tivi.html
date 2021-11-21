@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>疲れ５</title>
+</head>
+<body>
+<script>
+    class Remote {
+        constructor(code) {
+            this.code = code
+        }
+        controlChannel (tivi) {
+            if (this.code == tivi.code ) {
+                if (tivi.status == 'on') {
+                    tivi.channel = Number(prompt('input channel you want: '))
+                    console.log('start with channel: '+tivi.channel)
+                } else console.log('tivi is turning off')
+            } else console.log('remote is not suitable')
+        }
+        controlVolume (tivi) {
+            if (this.code == tivi.code ) {
+                if (tivi.status == 'on') {
+                    tivi.volume += 1
+                    console.log('now, volume is: '+tivi.volume)
+                } else console.log('tivi is turning off')
+            } else console.log('remote is not suitable')
+        }
+        turnOff (tivi) {
+            if (this.code == tivi.code) {
+                tivi.status = 'off'
+            } else console.log('remote is not suitable')
+        }
+        turnOn (tivi) {
+            if (this.code == tivi.code) {
+                tivi.status = 'on'
+            } else console.log('remote is not suitable')
+        }
+    }
+
+    class Tivi {
+        constructor(code, channel, volume, status) {
+            this.code = code
+            this.channel = channel
+            this.volume = volume
+            this.status = status
+        }
+        changeChannel (remote) {
+            if (this.code == remote.code ) {
+                if (this.status == 'on') {
+                    this.channel = Number(prompt('input channel you want: '))
+                    console.log('start with channel: '+this.channel)
+                } else console.log('tivi is turning off')
+            } else console.log('remote is not suitable')
+        }
+        changeVolume (remote) {
+            if (this.code == remote.code ) {
+                if (this.status == 'on') {
+                    this.volume += 1
+                    console.log('now, volume is: '+this.volume)
+                } else console.log('tivi is turning off')
+            } else console.log('remote is not suitable')
+        }
+    }
+
+    let remote1 = new Remote('C1021G1')
+    let remote2 = new Remote('C1121G1')
+    let tivi1 = new Tivi('C1021G1', 6, 40, 'on')
+    let tivi2 = new Tivi('C1121G1', 5, 30, 'off')
+    // console.log(tivi1)
+    // console.log(tivi2)
+
+    // remote1.controlVolume(tivi1)
+    // console.log(tivi1.volume)
+
+    // remote1.controlChannel(tivi1)
+    // console.log(tivi1.channel)
+
+    //remote2.controlChannel(tivi2)
+
+    // tivi1.changeChannel(remote2)
+
+    // remote2.turnOn(tivi2)
+    // console.log(tivi2.status)
+
+
+
+
+
+
+</script>
+</body>
+</html>

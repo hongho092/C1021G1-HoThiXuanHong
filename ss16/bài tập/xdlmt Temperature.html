@@ -5,6 +5,31 @@
     <title>xdlmtT</title>
 </head>
 <body>
+<script>
+    class Temperature {
 
+        constructor(number) {
+            this.C = number
+        }
+
+        changeToF () {
+            console.log('Change to F: '+((this.C*1,8)+32))
+        }
+
+        changeToC () {
+            console.log('Change to K: '+(this.C+273,15))
+        }
+
+    }
+
+    let Tem1 = new Temperature(25)
+    let Tem2 = new Temperature(35)
+    console.log(Tem1)
+    console.log(Tem2)
+    Tem1.changeToC()
+    Tem2.changeToF()
+
+
+</script>
 </body>
 </html>

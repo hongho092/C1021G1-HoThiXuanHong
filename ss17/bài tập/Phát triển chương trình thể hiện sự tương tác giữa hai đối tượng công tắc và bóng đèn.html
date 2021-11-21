@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>疲れ３</title>
+</head>
+<body>
+<script>
+    class SwitchButton {
+        constructor(status) {
+            this.status = status
+        }
+        switchOff (lamp) {
+            this.status = 'off'
+            lamp.status = 'off'
+            console.log('da tat den')
+        }
+        switchOn (lamp) {
+            if (this.status == 'on') {
+                if (lamp.status == 'on') {
+                    console.log('den da duoc bat san')
+                } else {
+                    console.log('den da hong')
+                }
+            } else {
+                this.status = 'on'
+                lamp.status = 'on'
+                console.log('da bat den')
+            }
+        }
+    }
+
+    class ElectricLamp {
+        constructor(status) {
+            this.status = status
+        }
+        turnOff (switcB) {
+            switcB.status = 'off'
+        }
+        turnOn (switcB) {
+            if (switcB.status == 'on') {
+                if (this.status == 'off') {
+                    console.log('den da hong')
+                } else console.log('den da duoc bat san')
+            } else if (switcB.status == 'off') {
+                switcB.status = 'on'
+            }
+        }
+    }
+
+    let switch1 = new SwitchButton('off', 'lamp1')
+    let lamp1 = new ElectricLamp('off')
+    // console.log(lamp1)
+    // console.log(switch1)
+    // switch1.switchOn(lamp1)
+    // switch1.switchOff(lamp1)
+    // console.log(lamp1)
+    lamp1.turnOn(switch1)
+
+</script>
+</body>
+</html>

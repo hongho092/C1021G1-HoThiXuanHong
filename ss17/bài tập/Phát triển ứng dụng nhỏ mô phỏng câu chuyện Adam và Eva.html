@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>疲れ２</title>
+</head>
+<body>
+<script>
+    class Apple {
+        constructor() {
+            this.weight = 10
+        }
+        decreaseApp () {
+            this.weight -= 2
+        }
+        getWei () {
+            return this.weight
+        }
+    }
+
+    class Human {
+        constructor(name, gender, weight, apple) {
+            this.name = name
+            this.gender = gender
+            this.weight = weight
+            this.apple = apple
+        }
+        setGender (gender) {
+            this.gender = gender
+            console.log(this.name+' is '+this.gender)
+        }
+        checkApple () {
+            console.log('m of apple: '+this.apple.getWei())
+        }
+        say (otherpepple) {
+            console.log(this.name+' talk with '+otherpepple.name+': How are you')
+            console.log(otherpepple.name+' answer with '+this.name+": I'm so tired")
+        }
+        getName () {
+            console.log(this.name)
+        }
+        setName (name) {
+            this.name = name
+        }
+        getWeight () {
+            return this.weight
+            // console.log(this.getWeight())
+        }
+        setWeight () {
+            this.weight += 5
+        }
+        eat (apple, otherpeople) {
+            if (this.apple.weight === 0) {
+                console.log("don't have the apple")
+            }else for (let i=1; this.apple.getWei()>0; i++) {
+                this.apple.decreaseApp ()
+                this.setWeight()
+                console.log(this.name+' ate the apple and' +'\r\n'+
+                    'weight of '+this.name+' after ate '+i+' :'+ this.getWeight()+'\r\n'+
+                    'weight of aplle: '+this.apple.getWei())
+                if (this.apple.getWei()>0) {
+                    this.apple.decreaseApp ()
+                    otherpeople.setWeight()
+                    console.log(otherpeople.name+' ate the apple and' +'\r\n'+
+                        'weight of '+otherpeople.name+' after ate '+i+' :'+ otherpeople.getWeight()+'\r\n'+
+                        'weight of aplle: '+this.apple.getWei())
+                } else console.log('ate all the apple')
+
+                // console.log('weight of '+this.name+' after ate '+i+' :'+ this.getWeight())
+                // console.log('weight of aplle: '+this.apple.getWei())
+            }
+        }
+    }
+
+    let app = new Apple()
+    let hum1 = new Human('Adam', 'male', 75, app)
+    let hum2 = new Human('Eva', 'female', 45, app)
+    // hum1.checkApple()
+   // hum1.say(hum2)
+    //hum2.say(hum1)
+    //hum2.checkApple()
+    hum1.eat(app, hum2)
+    // hum1.setGender('female')
+    // console.log(app1)
+
+
+
+</script>
+</body>
+</html>
