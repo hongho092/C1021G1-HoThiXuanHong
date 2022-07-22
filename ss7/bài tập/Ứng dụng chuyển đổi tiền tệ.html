@@ -40,13 +40,13 @@
         tiente1 = document.getElementById("tiente1").value;
         tiente2 = document.getElementById("tiente2").value;
         giatri = document.getElementById("nhap").value;
-        if(tiente1 == "dola" && tiente2 == "vn"){
+        if(tiente1 === "dola" && tiente2 === "vn"){
             ketqua = giatri*23000
             document.getElementById("ketqua").innerHTML = "Số tiền = "+ketqua + " VND"
-        }else if(tiente1 == "vn" && tiente2 == "dola"){
+        }else if(tiente1 === "vn" && tiente2 === "dola"){
             ketqua = giatri/23000
             document.getElementById("ketqua").innerHTML = "Số tiền = "+ketqua.toFixed(2) + " USD"
-        }else if(tiente1 == "vn" && tiente1 == "vn"){
+        }else if(tiente1 === "vn" && tiente1 === "vn"){
             document.getElementById("ketqua").innerHTML = "Số tiền = "+giatri + " VND"
         }else{
             document.getElementById("ketqua").innerHTML = "Số tiền = "+giatri + " USD"
